@@ -8,6 +8,7 @@ export default class ColorSelector extends Component {
     })
   )
 
+
   render() {
     return (
       <div id="colorSelector">
