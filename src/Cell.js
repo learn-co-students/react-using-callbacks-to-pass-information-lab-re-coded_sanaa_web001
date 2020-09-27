@@ -1,19 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import learnSymbol from './data.js'
+import Matrix from './Matrix.js'
 
-export default class Cell extends Component {
-  
-  constructor(props) {
-    super(props)
-    this.state = {
-      color: this.props.color
-    }
-  }
-  
-  render() {
-    return (
-      <div className="cell" style={{backgroundColor: this.state.color}}>
-      </div>
-    )
-  }
-  
-}
+ReactDOM.render(<Matrix values={learnSymbol} />, document.getElementById('root'));
